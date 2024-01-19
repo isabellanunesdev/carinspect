@@ -8,13 +8,17 @@
 
 This is an application that the user can send some information about a vehicle to get an inspection by insurance companies and so on.
 
+## Architecture
+
+![](./docs/arch.drawio.png)
+
 ## Layout
 
-Check on Figma: https://www.figma.com/file/6mHWT5lZy1vFusJOAUpar1/Car-Inspect?type=design&node-id=3%3A37&mode=design&t=x349fdcCikGUTEwl-1
+Check on [Figma](https://www.figma.com/file/6mHWT5lZy1vFusJOAUpar1/Car-Inspect?type=design&node-id=3%3A37&mode=design&t=x349fdcCikGUTEwl-1)
 
-## Run
+## Run and Testing
 
-To run this project locally you need docker, just run `docker compose up -d` and access `http://localhost:3000`.
+The Insomnia collection is available at [here](./docs/insomnia_2024-01-19.json). To run this project locally you just need docker, just run `docker compose up -d` and access the client at `http://localhost:3000`.
 
 ## Contributing
 
