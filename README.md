@@ -8,6 +8,10 @@
 
 This is an application that the user can send some information about a vehicle to get an inspection by insurance companies and so on.
 
+## Layout
+
+Check on Figma: https://www.figma.com/file/6mHWT5lZy1vFusJOAUpar1/Car-Inspect?type=design&node-id=3%3A37&mode=design&t=x349fdcCikGUTEwl-1
+
 ## Run
 
 To run this project locally you need docker, just run `docker compose up -d` and access `http://localhost:3000`.
