@@ -1,7 +1,7 @@
-import styles from "./page.module.css";
-
 import { Input } from "../../components/Input";
 import { Button } from "../../components/Button";
+
+import styles from "./page.module.css";
 
 export default function Page() {
   return (

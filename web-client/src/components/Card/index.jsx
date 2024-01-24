@@ -1,4 +1,4 @@
-import styles from "./styles.module.css";
+import styles from "./index.module.css";
 
 export function Card({ image, altText, title, subtitle }) {
   return (

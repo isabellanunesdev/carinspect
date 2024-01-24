@@ -1,10 +1,13 @@
 "use client";
-import Link from "next/link";
-import styles from "./page.module.css";
-import { useEffect, useState } from "react";
 import axios from "axios";
+
+import Link from "next/link";
+
+import { useEffect, useState } from "react";
 import { FiPlusCircle, FiMenu } from "react-icons/fi";
 import { Card } from "@/components/Card";
+
+import styles from "./page.module.css";
 
 export default function Page() {
   const [data, setData] = useState([]);
