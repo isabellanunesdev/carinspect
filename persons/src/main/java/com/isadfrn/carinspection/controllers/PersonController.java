@@ -43,9 +43,9 @@ public class PersonController {
         return ResponseEntity.status(HttpStatus.OK).body(personList);
     }
 
-    @GetMapping
+    @GetMapping("/{id}")
     @ResponseStatus(HttpStatus.OK)
-    public ResponseEntity<Optional<Person>> findById(@Valid @RequestBody Long id) {
+    public ResponseEntity<Optional<Person>> findById(@PathVariable Long id) {
         Optional<Person> person = personService.findById(id);
         return ResponseEntity.status(HttpStatus.OK).body(person);
     }
