@@ -18,7 +18,7 @@
 }
 
 .logo {
-  font-family: var(--secondary-font);
+  font-family: "Roboto Mono", monospace;
   text-align: center;
   font-size: 2rem;
 }
@@ -31,30 +31,6 @@
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
-}
-
-.linksGroup {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: -1rem;
-  gap: 0.4rem;
-}
-
-.recoverPassword {
-  color: var(--link-main-txt-color);
-  text-decoration: underline;
-}
-
-.register {
-  color: var(--secondary-txt-color);
-  text-decoration: underline;
-}
-
-.recoverPassword:hover,
-.register:hover {
-  filter: brightness(1.2);
-  cursor: pointer;
 }
 
 @media only screen and (min-width: 1024px) {

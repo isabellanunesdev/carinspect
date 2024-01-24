@@ -1,17 +1,26 @@
 {
   "name": "web-client",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev -p 3333",
+    "build": "next build",
+    "start": "next start -p 3333",
+    "lint": "next lint",
+    "mockServer": "json-server --watch ./src/mocks/db.json"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "isadfrn",
+  "license": "MIT",
   "dependencies": {
     "next": "^14.1.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "14.1.0",
+    "json-server": "^1.0.0-alpha.22"
   }
 }

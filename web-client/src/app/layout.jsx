@@ -1,10 +1,12 @@
 import React from "react";
-import "../styles/globals.css";
+
+import "./variables.css";
+import "./globals.css";
 
 export default function Layout({ children }) {
   return (
-    <>
-      <header>
+    <html lang="pt-br" suppressHydrationWarning={true}>
+      <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
@@ -15,8 +17,8 @@ export default function Layout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400;700&family=Roboto:wght@100;400;700&display=swap"
           rel="stylesheet"
         />
-      </header>
+      </head>
       <body>{children}</body>
-    </>
+    </html>
   );
 }

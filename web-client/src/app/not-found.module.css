@@ -1,0 +1,36 @@
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-width: 80%;
+}
+
+.error {
+  font-family: var(--secondary-font);
+  text-align: center;
+  font-size: 2rem;
+}
+
+.subtitle {
+  display: block;
+}
+
+.link {
+  font-size: 1rem;
+  margin: 2rem 0;
+  transition: all 200ms;
+  color: var(--secondary-txt-color);
+}
+
+.link:hover {
+  filter: brightness(1.2);
+  cursor: pointer;
+}

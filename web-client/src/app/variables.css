@@ -1,0 +1,18 @@
+:root {
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Roboto Mono", monospace;
+
+  --main-bg-color: #181818;
+
+  --main-txt-color: #ffffff;
+  --secondary-txt-color: #c98b4d;
+
+  --btn-bg-color: #d9d9d9;
+  --btn-border-color: #ffffff;
+  --btn-text-color: #181818;
+
+  --ipt-text-color: #ffffff;
+  --ipt-border-color: #ffffff;
+
+  --link-main-txt-color: #ffffff;
+}

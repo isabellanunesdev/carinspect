@@ -1,9 +1,3 @@
-:root {
-  --main-font: "Roboto", sans-serif;
-  --main-bg-color: #181818;
-  --main-txt-color: #ffffff;
-}
-
 * {
   padding: 0;
   margin: 0;
@@ -14,4 +8,5 @@ body {
   font-family: var(--main-font);
   background-color: var(--main-bg-color);
   color: var(--main-txt-color);
+  -webkit-font-smoothing: antialiased;
 }

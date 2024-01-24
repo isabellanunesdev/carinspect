@@ -1,9 +1,7 @@
-import Link from "next/link";
-
-import { Input } from "../components/Input";
-import { Button } from "../components/Button";
-
 import styles from "./page.module.css";
+
+import { Input } from "../../components/Input";
+import { Button } from "../../components/Button";
 
 export default function Page() {
   return (
@@ -12,21 +10,16 @@ export default function Page() {
       <div className={styles.container}>
         <h1 className={styles.logo}>Car Inspect</h1>
         <p className={styles.subtitle}>
-          Receba diversas ofertas de seguro para seus veículos e economize
+          Cadastre-se e receba diversas ofertas de seguro para seus veículos
         </p>
         <div className={styles.inputGroup}>
+          <Input type="text" placeholder="Nome" required />
           <Input type="email" placeholder="E-mail" required />
+          <Input type="text" placeholder="CPF" required />
+          <Input type="text" placeholder="Telefone" required />
           <Input type="password" placeholder="Senha" required />
         </div>
-        <Button title="Entrar" />
-        <div className={styles.linksGroup}>
-          <Link className={styles.recoverPassword} href="/recover_password">
-            Esqueceu sua senha?
-          </Link>
-          <Link className={styles.register} href="/register">
-            Não tem conta?
-          </Link>
-        </div>
+        <Button title="Começar" />
       </div>
     </main>
   );
