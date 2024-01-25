@@ -14,7 +14,7 @@ export default function Page() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3333/portfolios")
+      .get("http://localhost:80/portfolios/")
       .then((response) => {
         setData(response.data);
         console.log(response.data);

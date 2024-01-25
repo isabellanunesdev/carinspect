@@ -1,22 +1,31 @@
 version: "3.8"
 services:
-  java:
+  apigateway:
+    image: nginx
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    depends_on:
+      - persons
+      - portfolios
+  persons:
     build: ./persons
     ports:
       - "8080:8080"
     environment:
-      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres_db:5432/carinspect
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/carinspect
       SPRING_DATASOURCE_USERNAME: root
       SPRING_DATASOURCE_PASSWORD: root
     depends_on:
-      - postgres_db
-  node:
+      - postgres
+  portfolios:
     build: ./portfolios
     ports:
       - "3333:3333"
     depends_on:
-      - mongo_db
-  postgres_db:
+      - mongo
+  postgres:
     image: postgres
     ports:
       - "5432:5432"
@@ -26,7 +35,7 @@ services:
       POSTGRES_PASSWORD: root
     volumes:
       - postgres_data:/var/lib/postgresql/data
-  mongo_db:
+  mongo:
     image: mongo
     ports:
       - "27017:27017"
@@ -35,6 +44,10 @@ services:
       MONGO_INITDB_ROOT_PASSWORD: root
     volumes:
       - mongo_data:/data/db
+  web-client:
+    build: ./web-client
+    ports:
+      - "3000:3000"
 volumes:
   postgres_data:
   mongo_data:

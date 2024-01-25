@@ -20,6 +20,15 @@ Check on [Figma](https://www.figma.com/file/6mHWT5lZy1vFusJOAUpar1/Car-Inspect?t
 
 The Insomnia collection is available at [here](./docs/insomnia_2024-01-19.json). To run this project locally you just need docker, just run `docker compose up -d` and access the client at `http://localhost:3000`.
 
+## TODO
+
+- [ ] Add environment variable to local dev and container dev
+- [ ] Add monitoring tool
+- [ ] Add service for storing logs
+- [ ] Add insurance microservice
+- [ ] Add backoffice for ADMIN users
+- [ ] Add auth service
+
 ## Contributing
 
 This repository is using [Gitflow Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) and [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/), so if you want to contribute:

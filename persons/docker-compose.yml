@@ -1,6 +1,6 @@
 version: "3.8"
 services:
-  java-server:
+  persons:
     build: ./persons
     ports:
       - "8080:8080"

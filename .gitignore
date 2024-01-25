@@ -1,6 +1,6 @@
 # File created using '.gitignore Generator' for Visual Studio Code: https://bit.ly/vscode-gig
-# Created by https://www.toptal.com/developers/gitignore/api/windows,visualstudiocode,maven,macos,linux,java,database,node
-# Edit at https://www.toptal.com/developers/gitignore?templates=windows,visualstudiocode,maven,macos,linux,java,database,node
+# Created by https://www.toptal.com/developers/gitignore/api/windows,visualstudiocode,node,maven,macos,linux,java,database,nextjs,react
+# Edit at https://www.toptal.com/developers/gitignore?templates=windows,visualstudiocode,node,maven,macos,linux,java,database,nextjs,react
 
 ### Database ###
 *.accdb
@@ -105,14 +105,45 @@ buildNumber.properties
 # JDT-specific (Eclipse Java Development Tools)
 .classpath
 
-### Node ###
-# Logs
-logs
+### NextJS ###
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+*.pem
+
+# debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-lerna-debug.log*
 .pnpm-debug.log*
+
+# local env files
+.env*.local
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+### Node ###
+# Logs
+logs
+lerna-debug.log*
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
@@ -153,7 +184,6 @@ jspm_packages/
 web_modules/
 
 # TypeScript cache
-*.tsbuildinfo
 
 # Optional npm cache directory
 .npm
@@ -244,6 +274,19 @@ dist
 # SvelteKit build / generate output
 .svelte-kit
 
+### react ###
+.DS_*
+**/*.backup.*
+**/*.back.*
+
+node_modules
+
+*.sublime*
+
+psd
+thumb
+sketch
+
 ### VisualStudioCode ###
 .vscode/*
 !.vscode/settings.json
@@ -289,6 +332,6 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/windows,visualstudiocode,maven,macos,linux,java,database,node
+# End of https://www.toptal.com/developers/gitignore/api/windows,visualstudiocode,node,maven,macos,linux,java,database,nextjs,react
 
 # Custom rules (everything added below won't be overriden by 'Generate .gitignore File' if you use 'Update' option)

@@ -1,9 +1,10 @@
-const portfolioRouter = require("./portfolio.routes");
-
+const portfolioController = require("../controllers/portfolio.controller");
 const { Router } = require("express");
 
 const routes = Router();
 
-routes.use("/portfolios", portfolioRouter);
+routes.post("/", portfolioController.save);
+
+routes.get("/", portfolioController.list);
 
 module.exports = routes;

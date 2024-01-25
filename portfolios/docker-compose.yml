@@ -1,6 +1,6 @@
 version: "3.8"
 services:
-  node-server:
+  portfolios:
     build: .
     ports:
       - "3333:3333"

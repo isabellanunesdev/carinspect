@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const MONGODB_URI =
-  process.env.MONGODB_URI || "mongodb://root:root@mongo_db:27017";
+  process.env.MONGODB_URI || "mongodb://root:root@mongo:27017";
 
 const connectMongoDB = async () => {
   try {
