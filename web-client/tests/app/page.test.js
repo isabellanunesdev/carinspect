@@ -1,5 +1,4 @@
-import { test, expect } from "@playwright/test";
-import { assert } from "console";
+import { test } from "@playwright/test";
 
 test("Go to /recover_password when click on Esqueceu sua senha", async ({
   page,

@@ -19,15 +19,3 @@ test("should display subtitle with correct text", async ({ page }) => {
 test("should display an email input field", async ({ page }) => {
   await expect(page.locator('input[placeholder="E-mail"]')).toHaveCount(1);
 });
-
-// test('should display a "Enviar" button', async ({ page }) => {
-//   await expect(page.locator('button[text="Enviar"]')).toHaveCount(1);
-// });
-
-// test("should have a valid form submission", async () => {
-//   await page.fill('input[placeholder="Digite sua nova senha"]', "password123");
-//   await page.click("text=Redefinir senha");
-
-//   await page.waitForNavigation();
-//   await expect(page.locator('data-testid="success-page"')).toBeVisible();
-// });

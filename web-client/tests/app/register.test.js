@@ -29,6 +29,5 @@ test("should have a valid form submission", async ({ page }) => {
   await page.fill('input[placeholder="CPF"]', "12345678901");
   await page.fill('input[placeholder="Telefone"]', "1234567890");
   await page.fill('input[placeholder="Senha"]', "password123");
-
   await page.click("text=Começar");
 });

@@ -1,5 +1,4 @@
 import { test, expect } from "@playwright/test";
-import { assert } from "console";
 
 test("should load the page correctly", async ({ page }) => {
   await page.goto("http://localhost:3000/change_password");

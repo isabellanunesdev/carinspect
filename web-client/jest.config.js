@@ -14,6 +14,7 @@ const config = {
     "^.+\\.[t|j]sx?$": "babel-jest",
     "\\.(css|less|sass|scss)$": "<rootDir>/jest-transformers/cssTransform.js",
   },
+  modulePathIgnorePatterns: ["<rootDir>/tests/"],
 };
 
 module.exports = config;
