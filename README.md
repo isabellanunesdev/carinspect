@@ -18,7 +18,7 @@ Check on [Figma](https://www.figma.com/file/6mHWT5lZy1vFusJOAUpar1/Car-Inspect?t
 
 ## Run and Testing
 
-The Insomnia collection is available at [here](./docs/insomnia_2024-01-19.json). To run this project locally you just need docker, just run `docker compose up -d` and access the client at `http://localhost:3000`.
+The Insomnia collection is available at [here](./docs/insomnia.json). To run this project locally you just need docker, run `docker compose up -d` and access the client at `http://localhost:3000`.
 
 ## TODO
 
